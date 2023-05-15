@@ -1,0 +1,330 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --roboto: 'Roboto', sans-serif; /* 400 - 700 */
+    --colorBlack: #141414; 
+    --colorGray: #272727;
+    --colorWhite: #FFFFFF;
+    --colorTransparnt: hsla(0,0%,100%,.56);
+    --colorBlue: #2F77EB;
+}
+
+body {
+    font-family: var(--roboto);
+    background-color: var(--colorBlack);
+    color: var(--colorWhite);
+    /* margin: 0 18%; */
+}
+
+.container {
+    display: flex;
+    margin: 1rem;
+    padding: 0 20%;
+}
+
+/* Navigation */
+
+nav {
+    margin: 2rem 1rem;
+    /* padding: 1.5rem; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    /* justify-content: flex-end; */
+}
+
+nav ul li{
+    margin: 0 0.4rem;
+}
+
+nav ul li a {
+    color: var(--colorWhite);
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 0.8rem;
+    border-radius: 0.2rem;
+}
+
+nav ul li a:hover {
+    background-color: var(--colorGray);
+}
+
+/* Header */
+
+header {
+    /* display: flex; */
+    flex-direction: column;
+}
+
+header h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin: 8rem 0 4rem 0;
+}
+
+header span {
+    color: var(--colorBlue);
+}
+
+header p {
+    color: var(--colorWhite);
+    font-size: 1.6rem;
+    font-weight: 400;
+    /* width: 75%; */
+    max-width: 50rem;
+    margin-bottom: 4rem;
+}
+
+/* Section cards */
+
+.sectionClass {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+    /* width: 90%; */
+    padding-bottom: 6rem;
+    line-height: 36px;
+}
+
+.sectionClass .cards img {
+    width: 100%;
+    /* height: 80%; */
+    border-radius: 0.5rem;
+    transition: transform .2s;
+    cursor: pointer;
+}
+
+.sectionClass .cards img:hover {
+    transform: scale(1.1);
+}
+
+.sectionClass .cards h2 {
+    font-size: 3rem;
+    margin: 1rem 0 0.5rem 0;
+    cursor: pointer;
+}
+
+.sectionClass .cards h2:hover{
+    color: var(--colorBlue);
+}
+
+.sectionClass .cards p {
+    font-size: 1.2rem;
+    max-width: 20rem;
+    color: var(--colorTransparnt);
+}
+
+/* Marketing section */
+
+.sectionMarketing {
+    display: flex;
+    flex-direction: column;
+    /* margin: 1rem; */
+    padding: 0 20.5%;
+    background-color: var(--colorWhite);
+    color: var(--colorBlack);
+    padding-top: 4rem;
+    line-height: 36px;
+
+}
+
+.textMarketing {
+    margin: 4rem 0;
+}
+
+.textMarketing h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.textMarketing .hOne, .hTwo {
+    margin-bottom: 2rem;
+}
+
+.textMarketing p {
+    font-size: 1.5rem;
+    max-width: 52rem;
+    line-height: 2.5rem;
+    color: var(--colorGray);
+}
+
+.textMarketing .pOne {
+    margin-bottom: 6rem;
+}
+
+.textMarketing .pTwo {
+    margin-bottom: 2rem;
+}
+
+/* Cards Marketing */
+
+.sectionMarketing .marketingCards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 8rem;
+    gap: 2rem;
+}
+
+.sectionMarketing .marketingCards h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.sectionMarketing .marketingCards ul li {
+    font-size: 1.4rem;
+    font-weight: lighter;
+    margin: 1rem 0.4rem 0;
+    list-style-type: none;
+}
+
+.sectionMarketing .marketingCards a{
+    color: var(--colorBlue);
+    text-decoration: none;
+}
+
+.sectionMarketing .marketingCards a span {
+    color: var(--colorBlack);
+}
+
+.sectionMarketing .marketingCards a:hover {
+    color: #3784ff;
+}
+
+/* Additional services */
+
+.additionalServices {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--colorWhite);
+    color: var(--colorBlack);
+    margin: 0;
+    padding: 0 20%;
+    line-height: 36px;
+
+}
+
+.additionalServices h2 {
+    font-size: 2.5rem;
+    margin: 4rem 0 2rem;
+    
+}
+
+.additionalServices p {
+    font-size: 1.5rem;
+    max-width: 52rem;
+}
+
+.additionalServices .cardsServices {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 6rem 0;
+    gap: 2rem;
+}
+
+.additionalServices .cardsServices a {
+    font-size: 1.8rem;
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--colorBlack);
+    border-bottom: 2px solid var(--colorBlack);
+}
+
+.additionalServices .cardsServices p {
+    margin-top: 1.4rem;
+    font-size: 1.5rem;
+    max-width: 52rem;
+    line-height: 36px;
+}
+
+
+
+
+/* Talk */
+.sectionTalk {
+    display: flex;
+    flex-direction: column;
+    /* margin: 1rem; */
+    padding: 0 20.5%;
+    padding-top: 6rem;
+    padding-bottom: 8rem;
+    cursor: pointer;
+    transition: 0.6s;
+    background-color: var(--colorBlue);
+
+}
+
+.sectionTalk:hover {
+    background-color: #3784ff;
+    transition: 0.6s;
+}
+
+.sectionTalk a{
+    text-decoration: none;
+    /* color: var(--colorWhite); */
+    color: var(--colorBlack);
+
+}
+
+.sectionTalk p {
+    font-size: 1.6rem;
+    margin: 2rem 0;
+}
+
+.sectionTalk h3 {
+    font-size: 6rem;
+    font-weight: 700;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    /* margin: 1rem; */
+    padding: 0 20.5%;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    background-color: var(--colorWhite);
+    color: var(--colorBlack);
+}
+
+footer .listFooter {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+footer .listFooter h3 {
+    font-size: 1.8rem;
+    color: var(--colorGray);
+}
+
+footer .listFooter ul li {
+    list-style-type: none;
+    margin: 1.2rem 0;
+}
+
+footer .listFooter a {
+    font-size: 1.4rem;
+    color: var(--colorGray);
+    border-bottom: 2px solid var(--colorGray);
+    text-decoration: none;
+    padding-bottom: 0.4rem;
+}
+
+footer .listFooter a:hover {
+    color: var(--colorBlue);
+    border-bottom: 2px solid var(--colorBlue);
+}

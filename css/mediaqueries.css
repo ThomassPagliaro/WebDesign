@@ -1,0 +1,154 @@
+/* Media queries */
+@media only screen and (max-width: 1125px) {
+    .sectionClass {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer .listFooter { 
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 885px) {
+    .sectionMarketing .marketingCards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 825px) {
+    .sectionClass {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .sectionClass .cards img {
+        width: 80%;
+        /* height: 80%; */
+        border-radius: 0.5rem;
+        transition: transform .2s;
+        cursor: pointer;
+    }
+
+    .sectionClass .cards h2 {
+        font-size: 2rem;
+        margin: 2rem 0 1rem;
+    }
+
+    .sectionClass .cardsNone {
+        display: none;
+    }
+
+    .sectionMarketing .marketingCards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .sectionMarketing .marketingCards div {
+        padding: 2rem 4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+    }
+
+    .sectionMarketing .marketingCards ul li {
+        margin: 1rem 0;
+    }
+
+    footer .listFooter { 
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer p {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 665px) {
+    .container {
+        /* margin: 0.5rem; */
+        padding: 0 10%;
+
+    }
+
+    nav {
+        /* display: flex; */
+        flex-direction: column;
+    }
+
+    nav ul{
+        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    nav ul li {
+        margin: 0.8rem 0;
+
+    }
+
+    header {
+        padding: 0 10%;
+    }
+
+    header h1 {
+        margin: 2rem 0;
+    }
+
+    header p {
+        margin: 0.4rem 0;
+        margin-bottom: 2rem;
+    }
+
+    .sectionMarketing {
+        padding: 0 10%;
+    }
+
+    .sectionMarketing .marketingCards ul li {
+        margin: 1rem 0;
+    }
+
+    .additionalServices {
+        padding: 0 10%;
+    }
+
+    .additionalServices .cardsServices {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .sectionTalk {
+        padding: 4rem 10%;
+    }
+
+    .sectionTalk h3 {
+        font-size: 3rem;
+    }
+
+    footer {
+        padding: 4rem 10%;
+    }
+
+    footer .listFooter {
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media only screen and (max-width: 535px) {
+    header h1 {
+        font-size: 3rem;
+    }
+
+    header p {
+        font-size: 1.6rem;
+    }
+
+    .sectionMarketing .marketingCards div {
+        padding: 2rem 2rem;
+    }
+}
